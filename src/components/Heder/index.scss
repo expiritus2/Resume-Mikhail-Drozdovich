@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+
+  &__title {
+    color: #34679E;
+    font-size: 50px;
+    line-height: normal;
+  }
+
+  &__image-holder {
+    max-width: 355px;
+  }
+
+  &__personal-info-holder {
+    padding: 40px;
+  }
+
+  &__info-holder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  &__image {
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  &__phone-holder,
+  &__email-holder{
+    font-size: 26px;
+    color: #4473A5;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__email-link {
+    color: #2B3F92;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
