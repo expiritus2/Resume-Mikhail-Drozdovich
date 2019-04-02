@@ -1,0 +1,16 @@
+export default [
+  'JavaScript, ES6, ES7',
+  'HTML5',
+  'Mobile adopted layouts',
+  'Redux',
+  'JQuery',
+  'Good communication slills',
+  'Troubleshooting',
+  'CSS/SCSS',
+  'Cross browser layouts',
+  'ReactJS',
+  'Webpack',
+  'Jira',
+  'English - intermediate',
+  'Linux, MAC OS',
+];

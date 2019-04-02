@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+@import "../../styles/common";
+
+.section {
+
+  &__title {
+    color: $lightBlue;
+    text-align: left;
+  }
+}

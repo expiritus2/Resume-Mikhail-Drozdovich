@@ -40,7 +40,8 @@ module.exports = {
                   .map(v => v.charCodeAt(0))
                   .reduce((a, v) => (a + ((a << 7) + (a << 3))) ^ v)
                   .toString(16);
-                return `${localName}__${hash}`;
+                // return `${localName}__${hash}`;
+                return `${localName}`;
               },
             },
           },

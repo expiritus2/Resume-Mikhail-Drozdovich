@@ -1,0 +1,10 @@
+@import "../../styles/common";
+
+.section {
+
+  &__list {
+    list-style: none;
+    column-count: 3;
+    line-height: 50px;
+  }
+}

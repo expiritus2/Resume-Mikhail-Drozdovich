@@ -1,8 +1,10 @@
+@import "../../styles/variables";
+
 .header {
   display: flex;
 
   &__title {
-    color: #34679E;
+    color: $lightBlue;
     font-size: 50px;
     line-height: normal;
   }
@@ -37,7 +39,7 @@
   }
   
   &__email-link {
-    color: #2B3F92;
+    color: $darkBlue;
     text-decoration: underline;
 
     &:hover {
