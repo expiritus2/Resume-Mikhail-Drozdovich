@@ -1,8 +1,14 @@
 const path = require('path');
 
+const webpack = require('webpack');
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebPackPlugin = require('clean-webpack-plugin');
+
+const yargs = require('yargs').argv;
+
+const person = yargs.person || false;
 
 module.exports = {
   entry: './src/index.js',
@@ -72,6 +78,9 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.[contenthash].css',
+    }),
+    new webpack.DefinePlugin({
+      PERSON: JSON.stringify(person),
     }),
   ],
 };

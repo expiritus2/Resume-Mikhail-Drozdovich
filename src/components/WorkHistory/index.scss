@@ -3,6 +3,10 @@
 
 .section {
 
+  &__link {
+    color: red;
+  }
+
   &__title-holder {
     display: flex;
     justify-content: space-between;

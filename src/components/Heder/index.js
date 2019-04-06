@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Photo from 'images/image.jpeg';
+import { Photo } from 'settings/imports';
 
 import styles from './index.scss';
 

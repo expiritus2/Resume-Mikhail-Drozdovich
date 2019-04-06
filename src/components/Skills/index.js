@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 
-import skillsList from 'store/skills';
+import { skillsList } from 'settings/imports';
 
 import styles from './index.scss';
 
