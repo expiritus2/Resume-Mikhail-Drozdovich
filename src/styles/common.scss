@@ -4,6 +4,10 @@
 
   margin-bottom: 80px;
 
+  @media screen and (max-width: $mobileLargh){
+    margin-bottom: 40px;
+  }
+
   &__text-holder {
     border-top: 2px solid $gray;
     padding: 15px 0;
@@ -13,12 +17,21 @@
     color: $lightBlue;
     text-align: center;
     font-size: 32px;
+
+    @media screen and (max-width: $mobileLargh){
+      font-size: 28px;
+    }
   }
 
   &__text {
     font-size: 22px;
     color: $gray;
     font-weight: 500;
+
+    @media screen and (max-width: $mobileLargh){
+      font-size: 20px;
+      line-height: 32px;
+    }
   }
 
   &__accent {

@@ -10,6 +10,11 @@
   &__title-holder {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 550px){
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__position,
@@ -17,6 +22,10 @@
     font-size: 32px;
     color: $lightBlue;
     font-weight: 500;
+
+    @media screen and (max-width: $mobileLargh){
+      font-size: 26px;
+    }
   }
 
   &__company {

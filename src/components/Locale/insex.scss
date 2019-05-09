@@ -1,0 +1,14 @@
+@import "~react-flags-select/scss/react-flags-select.scss";
+
+.locale {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 20px 0;
+  margin-bottom: 5%;
+
+  @media screen and (max-width: 920px){
+    margin-bottom: 0;
+  }
+}

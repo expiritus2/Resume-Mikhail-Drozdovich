@@ -1,10 +1,14 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useContext } from 'react';
+import { LocaleContext } from 'context';
 
 import { worksList } from 'settings/imports';
 
 import styles from './index.scss';
 
 const WorkHistory = () => {
+  const { locale } = useContext(LocaleContext);
+  const workDescriptions = worksList[locale] ? worksList[locale] : [];
+
   const renderWork = useCallback((work, index) => {
     const { position, yearRange, company, description } = work;
 
@@ -27,7 +31,7 @@ const WorkHistory = () => {
   return (
     <>
       <h2 className={styles.section__title}>Work History</h2>
-      {worksList.map(renderWork)}
+      {workDescriptions.map(renderWork)}
     </>
   );
 };
