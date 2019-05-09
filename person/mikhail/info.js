@@ -1,5 +1,5 @@
 const phone = '+375 (29) 676-26-32';
-const email = 'michaildrazdovich@gmail.com';
+const email = '6762632@gmail.com';
 const skype = 'antras2007';
 
 export default {
