@@ -4,7 +4,7 @@ const skype = 'antras2007';
 
 export default {
   US: {
-    name: 'MIKHAIL DROZDOVICH',
+    name: 'Mikhail Drozdovich',
     born: 'Born September 28, 1983',
     phone: {
       text: 'Phone:',
