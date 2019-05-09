@@ -7,7 +7,7 @@ import styles from './index.scss';
 
 const Education = () => {
   const { locale } = useContext(LocaleContext);
-  const educationList = education[locale] ? education[locale] : [];
+  const { title, description } = education[locale] ? education[locale] : [];
 
   const renderEducation = useCallback((item, index) => (
     <div key={`${item}-${index}`}>
@@ -23,9 +23,9 @@ const Education = () => {
 
   return (
     <section className={styles.section}>
-      <h2 className={titleClasses}>Education</h2>
+      <h2 className={titleClasses}>{title}</h2>
       <div className={styles['section__text-holder']}>
-        {educationList.map(renderEducation)}
+        {description.map(renderEducation)}
       </div>
     </section>
   );

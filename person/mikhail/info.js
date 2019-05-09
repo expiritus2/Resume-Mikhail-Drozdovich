@@ -1,18 +1,22 @@
+const phone = '+375 (29) 676-26-32';
+const email = 'michaildrazdovich@gmail.com';
+const skype = 'antras2007';
+
 export default {
   US: {
     name: 'MIKHAIL DROZDOVICH',
     born: 'Born September 28, 1983',
     phone: {
       text: 'Phone:',
-      number: '+375 (29) 676-26-32',
+      number: phone,
     },
     email: {
       text: 'Email:',
-      address: 'michaildrozdovich@gmail.com',
+      address: email,
     },
     skype: {
       text: 'Skype:',
-      address: 'antras2007',
+      address: skype,
     },
     live: {
       text: 'Live:',
@@ -28,15 +32,15 @@ export default {
     born: 'Родился 28 Сентября, 1983г',
     phone: {
       text: 'Телефон:',
-      number: '+375 (29) 676-26-32',
+      number: phone,
     },
     email: {
       text: 'Email:',
-      address: 'michaildrozdovich@gmail.com',
+      address: email,
     },
     skype: {
       text: 'Skype:',
-      address: 'antras2007',
+      address: skype,
     },
     live: {
       text: 'Живу:',

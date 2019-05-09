@@ -7,7 +7,7 @@ import styles from './index.scss';
 
 const WorkHistory = () => {
   const { locale } = useContext(LocaleContext);
-  const workDescriptions = worksList[locale] ? worksList[locale] : [];
+  const { title, jobs } = worksList[locale] ? worksList[locale] : [];
 
   const renderWork = useCallback((work, index) => {
     const { position, yearRange, company, description } = work;
@@ -30,8 +30,8 @@ const WorkHistory = () => {
 
   return (
     <>
-      <h2 className={styles.section__title}>Work History</h2>
-      {workDescriptions.map(renderWork)}
+      <h2 className={styles.section__title}>{title}</h2>
+      {jobs.map(renderWork)}
     </>
   );
 };

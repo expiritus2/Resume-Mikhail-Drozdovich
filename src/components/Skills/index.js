@@ -7,7 +7,7 @@ import styles from './index.scss';
 
 const Skills = () => {
   const { locale } = useContext(LocaleContext);
-  const skills = skillsList[locale] ? skillsList[locale] : [];
+  const { title, description: skills } = skillsList[locale] ? skillsList[locale] : [];
 
   const renderSkill = useCallback((skill, index) => (
     <li key={`${skill}-${index}`} className={styles.section__text}>
@@ -17,7 +17,7 @@ const Skills = () => {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.section__title}>Skills</h2>
+      <h2 className={styles.section__title}>{title}</h2>
       <div className={styles['section__text-holder']}>
         <ul className={styles.section__list}>
           {skills.map(renderSkill)}
