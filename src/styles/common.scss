@@ -4,6 +4,10 @@
 
   margin-bottom: 80px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen and (max-width: $mobileLargh){
     margin-bottom: 40px;
   }
