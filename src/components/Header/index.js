@@ -22,10 +22,12 @@ const Header = () => {
         <h1 className={styles.header__title}>{name}</h1>
         <h3 className={styles.header__subtitle}>{born}</h3>
         <div className={styles['header__info-holder']}>
-          <p className={styles['header__phone-holder']}>{phone.text}
+          <p className={styles['header__phone-holder']}>
+            <span className={styles['header__info-label']}>{phone.label}</span>
             <span className={styles.header__phone}>{phone.number}</span>
           </p>
-          <p className={styles['header__email-holder']}>{email.text}
+          <p className={styles['header__email-holder']}>
+            <span className={styles['header__info-label']}>{email.label}</span>
             <a
               className={styles['header__email-link']}
               href={`mailto:${email.address}`}
@@ -33,15 +35,18 @@ const Header = () => {
               {email.address}
             </a>
           </p>
-          <p className={styles['header__skype-holder']}>{skype.text}
+          <p className={styles['header__skype-holder']}>
+            <span className={styles['header__info-label']}>{skype.label}</span>
             <span className={styles.header__skype}>{skype.address}</span>
           </p>
         </div>
         <div className={styles['header__info-holder']}>
-          <p className={styles['header__live-holder']}>{live.text}
+          <p className={styles['header__live-holder']}>
+            <span className={styles['header__info-label']}>{live.label}</span>
             <span className={styles.header__live}>{live.location}</span>
           </p>
-          <p className={styles['header__live-holder']}>{citizenship.text}
+          <p className={styles['header__live-holder']}>
+            <span className={styles['header__info-label']}>{citizenship.label}</span>
             <span className={styles.header__live}>{citizenship.location}</span>
           </p>
         </div>

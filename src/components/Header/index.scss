@@ -14,7 +14,7 @@
 
   &__title {
     color: $lightBlue;
-    font-size: 50px;
+    font-size: 46px;
     line-height: normal;
 
     @media screen and (max-width: $smallScreen){
@@ -92,6 +92,13 @@
       text-align: center;
       margin: 15px 0;
     }
+  }
+
+  &__phone,
+  &__email,
+  &__skype,
+  &__live{
+    font-weight: 500;
   }
 
   &__email-link {

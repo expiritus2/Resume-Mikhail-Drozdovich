@@ -4,26 +4,26 @@ const skype = 'antras2007';
 
 export default {
   US: {
-    name: 'Mikhail Drozdovich',
+    name: 'Drozdovich Mikhail Alexandrovich',
     born: 'Born September 28, 1983',
     phone: {
-      text: 'Phone:',
+      label: 'Phone:',
       number: phone,
     },
     email: {
-      text: 'Email:',
+      label: 'Email:',
       address: email,
     },
     skype: {
-      text: 'Skype:',
+      label: 'Skype:',
       address: skype,
     },
     live: {
-      text: 'Live:',
+      label: 'Live:',
       location: 'Belarus, Minsk',
     },
     citizenship: {
-      text: 'Citizenship:',
+      label: 'Citizenship:',
       location: 'Belarus',
     },
   },
@@ -31,23 +31,23 @@ export default {
     name: 'Дроздович Михаил Александрович',
     born: 'Родился 28 Сентября, 1983г',
     phone: {
-      text: 'Телефон:',
+      label: 'Телефон:',
       number: phone,
     },
     email: {
-      text: 'Email:',
+      label: 'Email:',
       address: email,
     },
     skype: {
-      text: 'Skype:',
+      label: 'Skype:',
       address: skype,
     },
     live: {
-      text: 'Живу:',
+      label: 'Живу:',
       location: 'Беларусь, Минск',
     },
     citizenship: {
-      text: 'Гражданство:',
+      label: 'Гражданство:',
       location: 'РБ',
     },
   },
