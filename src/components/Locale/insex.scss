@@ -1,3 +1,4 @@
+@import "../../styles/variables";
 @import "~react-flags-select/scss/react-flags-select.scss";
 
 .locale {
@@ -9,13 +10,11 @@
   margin-bottom: 5%;
 
   .flag-select {
-
-    .selected--flag--option {
-      padding: 0;
-    }
+    position: relative;
+    right: -8px;
   }
 
-  @media screen and (max-width: 920px){
+  @media screen and (max-width: $smallScreen){
     margin-bottom: 0;
   }
 }
