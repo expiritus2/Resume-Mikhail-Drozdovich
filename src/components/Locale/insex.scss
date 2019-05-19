@@ -8,6 +8,13 @@
   padding: 20px 0;
   margin-bottom: 5%;
 
+  .flag-select {
+
+    .selected--flag--option {
+      padding: 0;
+    }
+  }
+
   @media screen and (max-width: 920px){
     margin-bottom: 0;
   }
