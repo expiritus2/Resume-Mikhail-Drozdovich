@@ -2,7 +2,7 @@ import React, { useState, useCallback, useContext } from 'react';
 
 import { Header, ProfSummary, Skills, WorkHistory, Education, Locale } from 'components';
 import { LocaleContext } from 'context';
-import { Decorations } from './components';
+// import { Decorations } from './components';
 
 import styles from './index.scss';
 
@@ -24,7 +24,7 @@ const App = () => {
         <WorkHistory />
         <Education />
       </div>
-      <Decorations />
+      {/* <Decorations /> */}
     </LocaleContext.Provider>
   );
 };
