@@ -1,0 +1,21 @@
+.save-padf-button {
+  display: inline-block;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 15px;
+  font-size: 14px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  color: #636163;
+
+  &:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  @media screen and (max-width: 1366px){
+    display: none;
+  }
+}
