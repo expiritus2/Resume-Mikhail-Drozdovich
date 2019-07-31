@@ -14,7 +14,7 @@
 
   &__title {
     color: $lightBlue;
-    font-size: 46px;
+    font-size: 43px;
     line-height: normal;
 
     @media screen and (max-width: $smallScreen){
@@ -39,7 +39,8 @@
   }
 
   &__image-holder {
-    max-width: 355px;
+    max-width: 400px;
+    min-height: 400px;
 
     @media screen and (max-width: $smallScreen) {
       width: 100%;

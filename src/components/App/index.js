@@ -1,12 +1,13 @@
 import React, { useState, useCallback, useContext } from 'react';
 
-import { Header, ProfSummary, Skills, WorkHistory, Education, Locale, Saver } from 'components';
+import { Header, ProfSummary, Skills, WorkHistory, Education, Locale, Saver, Spinner } from 'components';
 import { LocaleContext } from 'context';
 
 import styles from './index.scss';
 
 const App = () => {
   const { locale } = useContext(LocaleContext);
+  const [isShowSpinner, setIsShowSpinner] = useState(false);
   const [localeValue, setLocaleValue] = useState(locale);
 
   const changeLocale = useCallback((lang) => {
@@ -15,7 +16,7 @@ const App = () => {
 
   return (
     <LocaleContext.Provider value={{ locale: localeValue, changeLocale }}>
-      <Saver />
+      <Saver showSpinner={setIsShowSpinner} />
       <div className={styles.container}>
         <Locale />
         <Header />
@@ -24,7 +25,7 @@ const App = () => {
         <WorkHistory />
         <Education />
       </div>
-      {/* <Decorations /> */}
+      <Spinner isShow={isShowSpinner} />
     </LocaleContext.Provider>
   );
 };

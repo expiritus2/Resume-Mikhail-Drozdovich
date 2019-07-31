@@ -4,15 +4,17 @@ import JSPDF from 'jspdf';
 
 import styles from './index.scss';
 
-const Saver = () => {
+const Saver = ({ showSpinner }) => {
   const onClick = useCallback(() => {
+    showSpinner(true);
     const fileName = 'mickail-drozdovich.pdf';
     html2canvas(document.body).then((canvas) => {
       const pdf = new JSPDF('p', 'mm', 'a4');
       pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, 211, 298);
       pdf.save(fileName);
+      showSpinner(false);
     });
-  }, []);
+  }, [showSpinner]);
 
   return (
     <div onClick={onClick} className={styles['save-padf-button']}>
