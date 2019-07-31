@@ -16,7 +16,8 @@
     "jspdf": "^1.5.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-flags-select": "^1.1.10"
+    "react-flags-select": "^1.1.10",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
@@ -49,7 +50,6 @@
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.14.0",
-    "prop-types": "^15.7.2",
     "sass-loader": "^7.1.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
