@@ -17,6 +17,8 @@ const skills = [
   'MySql',
   'MongoDb',
   'Websocket',
+  'PHP',
+  'Java',
 ];
 
 export default {
