@@ -1,6 +1,8 @@
 import React, { useState, useCallback, useContext } from 'react';
 
-import { Header, ProfSummary, Skills, WorkHistory, Education, Locale, Saver, Spinner } from 'components';
+import {
+  Header, ProfSummary, Skills, WorkHistory, Education, Locale, Saver, Spinner, Projects
+} from 'components';
 import { LocaleContext } from 'context';
 
 import styles from './index.scss';
@@ -24,6 +26,7 @@ const App = () => {
         <Skills />
         <WorkHistory />
         <Education />
+        <Projects />
       </div>
       <Spinner isShow={isShowSpinner} />
     </LocaleContext.Provider>

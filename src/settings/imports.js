@@ -5,6 +5,7 @@ let skillsList = [];
 let worksList = [];
 let profSummary = {};
 let education = [];
+let projects = [];
 
 if (PERSON) {
   Photo = require(`../../person/${PERSON}/photo/image.jpeg`);
@@ -13,6 +14,7 @@ if (PERSON) {
   worksList = require(`../../person/${PERSON}/work-history.js`).default;
   profSummary = require(`../../person/${PERSON}/profSummary.js`).default;
   education = require(`../../person/${PERSON}/education.js`).default;
+  projects = require(`../../person/${PERSON}/projects.js`).default;
 }
 
 module.exports = {
@@ -21,5 +23,6 @@ module.exports = {
   skillsList,
   worksList,
   profSummary,
-  education
+  education,
+  projects
 };

@@ -7,3 +7,4 @@ export { default as Education } from './Education';
 export { default as Locale } from './Locale';
 export { default as Saver } from './Saver';
 export { default as Spinner } from './Spinner';
+export { default as Projects } from './Projects';
