@@ -1,13 +1,13 @@
 import React, { useCallback, useContext } from 'react';
 import { LocaleContext } from 'context';
 
-import { worksList } from 'settings/imports';
+import { experience } from 'settings/imports';
 
 import styles from './index.scss';
 
-const WorkHistory = () => {
+const Experience = () => {
   const { locale } = useContext(LocaleContext);
-  const { title, jobs } = worksList[locale] ? worksList[locale] : [];
+  const { title, jobs } = experience[locale] ? experience[locale] : [];
 
   const renderWork = useCallback((work, index) => {
     const { position, yearRange, company, description } = work;
@@ -36,4 +36,4 @@ const WorkHistory = () => {
   );
 };
 
-export default WorkHistory;
+export default Experience;

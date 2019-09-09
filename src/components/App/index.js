@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useContext } from 'react';
 
 import {
-  Header, ProfSummary, Skills, WorkHistory, Education, Locale, Saver, Spinner, Projects
+  Header, ProfSummary, Skills, Experience, Education, Locale, Saver, Spinner, Projects
 } from 'components';
 import { LocaleContext } from 'context';
 
@@ -24,7 +24,7 @@ const App = () => {
         <Header />
         <ProfSummary />
         <Skills />
-        <WorkHistory />
+        <Experience />
         <Education />
         <Projects />
       </div>

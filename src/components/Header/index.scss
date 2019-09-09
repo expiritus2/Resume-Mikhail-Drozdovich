@@ -3,6 +3,7 @@
 .header {
   display: flex;
   margin-bottom: 80px;
+  justify-content: space-between;
 
   @media screen and (max-width: $mobileLargh){
     margin-bottom: 40px;
@@ -49,7 +50,7 @@
   }
 
   &__personal-info-holder {
-    padding: 20px 40px;
+    padding: 20px 0 20px 40px;
     line-height: 35px;
 
     @media screen and (max-width: $smallScreen){
@@ -62,6 +63,11 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    line-height: 45px;
+
+    &__inner {
+      display: block;
+    }
 
     @media screen and (max-width: 500px){
       margin-top: 20px;
